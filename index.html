@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy 1st Monthsary ❤️</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght=700&family=Poppins:wght=300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ========================= -->
+<!-- PASSWORD SCREEN           -->
+<!-- ========================= -->
+<section id="password-screen">
+    <div class="password-box">
+        <h1>💖</h1>
+        <h2>Our Secret Date</h2>
+        <p>Enter our anniversary date to enter (YYYYMMDD):</p>
+        <input type="password" id="password" placeholder="e.g., 20260615" onkeydown="if(event.key === 'Enter') checkPassword()">
+        <button onclick="checkPassword()">Unlock Memories</button>
+        <div id="error"></div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- MAIN WEBSITE CONTAINER    -->
+<!-- ========================= -->
+<div id="website" style="display: none;">
+
+    <!-- ========================= -->
+    <!-- MAIN HOME HUB / MENU      -->
+    <!-- ========================= -->
+    <section id="home">
+        <div class="hero-content">
+            <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=500" alt="Us">
+            <h1>Happy 1st Monthsary!</h1>
+            <p class="hero-subtitle">One month down, a lifetime of beautiful moments to go. Thank you for being my person, my happy place, and my favorite distraction.</p>
+        </div>
+        
+        <nav id="menu">
+            <h2>❤️ Our Story</h2>
+            <div class="nav-buttons">
+                <a href="#letter">💌 Letter</a>
+                <a href="#gallery">📸 Memories</a>
+                <a href="#music">🎵 Playlist</a>
+                <a href="#reasons">🌹 Reasons</a>
+                <a href="#future">🌎 Future</a>
+                <a href="#ending">❤️ Ending</a>
+            </div>
+        </nav>
+    </section>
+
+    <!-- ========================= -->
+    <!-- LETTER SECTION            -->
+    <!-- ========================= -->
+    <section id="letter">
+        <h2>💌 My Letter</h2>
+        
+        <!-- BIRTHDAY LOCK SHIELD -->
+        <div id="letter-lock" class="card letter-lock-box">
+            <h3>🔒 A Special Letter For You</h3>
+            <p>To read this, please enter your birthdate (YYYYMMDD):</p>
+            <input type="password" id="birthday-input" placeholder="e.g., 20021217" onkeydown="if(event.key === 'Enter') checkBirthday()">
+            <button onclick="checkBirthday()">Unlock My Heart</button>
+            <div id="birthday-error"></div>
+        </div>
+
+        <!-- ACTUAL LETTER -->
+        <div id="secret-letter" class="card reveal-animation" style="display: none;">
+            <p><strong>Happy 1st Monthsary my pretty, gorgeous, cute, K-pop loving, and perfect baby!</strong></p>
+            <br>
+            <p>I can’t believe it’s already been a whole month since we made things official. Even more, I can’t believe it’s already been over a month since you came into my life. Ever since that moment, I have been the happiest, most valued, and most loved person in the world.</p>
+            <br>
+            <p>I always smile whenever I think back to our early dates. I can still clearly remember how shy I was around you, and how hard I tried to hide it so things wouldn't feel awkward. Back then, I would invite you out even when I had absolutely no plan—honestly, I just wanted to talk to you and be with you. When I look back at those first dates, I always remember how you preferred sitting next to me instead of across the table, and how you would playfully bump into me while we were walking. Those moments were so special because we never expected or predicted that we would end up where we are today.</p>
+            <br>
+            <p>You know, before you arrived, my life was just a loop: work, go home, and drown myself in my phone or my computer. At the end of every day, I couldn't help but think, <em>"Why does everything feel so shallow and empty?"</em> But when you came along, it was like everything suddenly found its color and purpose. Now, even when I'm running on lack of sleep at work, I find myself smiling through the tiredness just back-reading our chats. It reached a point where my day simply doesn't feel complete if I haven't talked to you. Since then, I’m always counting down the days until I get to see you and hold you again.</p>
+            <br>
+            <p>Well, who wouldn’t be excited to go on a date when their partner is exactly like you? You have an amazing sense of humor (and thank goodness it's not just dark humor like mine!), a beautiful smile that is completely contagious, and a total princess-like presence. Plus, your intelligence is honestly one of the biggest reasons I fell for you. You are my absolute ideal, and as far as I'm concerned, you are perfect for me mwehehe.</p>
+            <br>
+            <p>This is only our first month, baby, and there is still so much I want to learn about you. We have so much joy and so many challenges left to experience together, and I can confidently say I will choose you no matter what the world throws at us. I can't wait to grow with you, baby. Keep chasing your dreams, because from now on, you have me right beside you supporting you through every single one of them. I love you so much—there aren't enough words in the world to equal how much you mean to me. Mwaaaa!</p>
+            <br>
+            <p>— <strong>Your unexpected love</strong></p>
+        </div>
+        
+        <a class="back" href="#home">⬆ Back to Menu</a>
+    </section>
+
+    <!-- ========================= -->
+    <!-- GALLERY SECTION            -->
+    <!-- ========================= -->
+    <section id="gallery">
+        <h2>Our Memories</h2>
+        <div class="gallery">
+            <!-- Column 1: Our First Picture (1 Pic) -->
+            <div class="gallery-item">
+                <img src="Assets/Pictures/1st pic.jpg" alt="Memory 1">
+                <p class="photo-caption">Our First Picture✨</p>
+            </div>
+            
+            <!-- Column 2: Coffee Date (2 Pics) -->
+            <div class="gallery-item">
+                <div class="item-photos two-grid">
+                    <img src="Assets/Pictures/coffee dayt 1.jpg" alt="Memory 2_1">
+                    <img src="Assets/Pictures/coffee dayt 2.jpg" alt="Memory 2_2">
+                </div>
+                <p class="photo-caption">Coffee date with cute hair color ☕</p>
+            </div>
+            
+            <!-- Column 3: Jogging (1 Pic) -->
+            <div class="gallery-item">
+                <img src="Assets/Pictures/Jogging.jpg" alt="Memory 3">
+                <p class="photo-caption">Jogging under a little bit of rain 🌦️</p>
+            </div>
+            
+            <!-- Column 4: Official Dating Day (6 Pics) -->
+            <div class="gallery-item">
+                <div class="item-photos six-grid">
+                    <img src="Assets/Pictures/official 1.jpg" alt="Memory 4_1">
+                    <img src="Assets/Pictures/official 6.jpg" alt="Memory 4_2">
+                    <img src="Assets/Pictures/official 3.jpg" alt="Memory 4_3">                  
+                    <img src="Assets/Pictures/official 4.jpg" alt="Memory 4_4">
+                    <img src="Assets/Pictures/official 2.jpg" alt="Memory 4_5">
+                    <img src="Assets/Pictures/official 5.jpg" alt="Memory 4_6">
+                </div>
+                <p class="photo-caption">Our first official dating day ❤️</p>
+            </div>
+
+            <!-- Column 5: Watching From (Custom 1-on-top, 2-on-bottom layout) -->
+            <div class="gallery-item">
+                <div class="item-photos three-grid-custom">
+                    <img src="Assets/Pictures/from.jpg" alt="Watching From 1" class="top-landscape">
+                    <img src="Assets/Pictures/from2.jpg" alt="Watching From 2" class="bottom-portrait">
+                    <img src="Assets/Pictures/form3.jpg" alt="Watching From 3" class="bottom-portrait">
+                </div>
+                <p class="photo-caption">Watching From while eating sweets ❤️</p>
+            </div>
+            
+            <!-- Column 6: Wallpaper (1 Pic) -->
+            <div class="gallery-item">
+                <img src="Assets/Pictures/wall paper.jpg" alt="Memory 3">
+                <p class="photo-caption">Phone wall paper✨</p>
+            </div>
+
+            <!-- Column 7: Cubao Date (Custom 1-on-top, 2-on-bottom layout) -->
+            <div class="gallery-item">
+                <div class="item-photos three-grid-custom">
+                    <img src="Assets/Pictures/Cubao.jpg" alt="Watching From 1" class="top-landscape">
+                    <img src="Assets/Pictures/Cubao2.jpg" alt="Watching From 2" class="bottom-portrait">
+                    <img src="Assets/Pictures/Cubao3.jpg" alt="Watching From 3" class="bottom-portrait">
+                </div>
+                <p class="photo-caption">Cubao Dateee🤭</p>
+            </div>
+
+            <!-- Column 8: Robinson Gal Date (As Is 2x2 Layout) -->
+            <div class="gallery-item">
+                <div class="item-photos four-grid-custom">
+                    <img src="Assets/Pictures/GAL1.jpg" alt="Robinson Gal 1">
+                    <img src="Assets/Pictures/GAL2.jpg" alt="Robinson Gal 2">
+                    <img src="Assets/Pictures/GAL3.jpg" alt="Robinson Gal 3">
+                    <img src="Assets/Pictures/GAL4.jpg" alt="Robinson Gal 4">
+                </div>
+                <p class="photo-caption">Robinson Gal Dat🤭</p>
+            </div>
+
+            <!-- Full Width Row: Green Layout -->
+            <div class="gallery-item full-row-item">
+                <div class="item-photos four-landscape-row">
+                    <img src="Assets/Pictures/green1.jpg" alt="Green 1">
+                    <img src="Assets/Pictures/green3.jpg" alt="Green 3">
+                    <img src="Assets/Pictures/green2.jpg" alt="Green 2">
+                    <img src="Assets/Pictures/green4.jpg" alt="Green 4">
+                </div>
+                <p class="photo-caption">Green Memories Gallery 💚</p>
+            </div>
+        </div>
+        
+        <div style="text-align: center;">
+            <a class="back" href="#home">⬆ Back to Menu</a>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- PLAYLIST SECTION          -->
+    <!-- ========================= -->
+    <section id="music">
+        <h2>🎵 Our Playlist</h2>
+        <p style="text-align: center; font-style: italic; color: #777; margin-top: -30px; margin-bottom: 40px; font-size: 16px;">
+            The music that reminds me of you
+        </p>
+        <div class="spotify-container">
+            <div class="spotify-header">
+                <span class="col-num">#</span>
+                <span class="col-title">Title</span>
+            </div>
+            
+            <div class="spotify-tracklist">
+                <!-- Track 1: Golden Hour -->
+                <div class="spotify-track">
+                    <div class="track-number">1</div>
+                    <img src="https://img.youtube.com/vi/PEM0Vs8jf1w/hqdefault.jpg" alt="Golden Hour Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=PEM0Vs8jf1w" target="_blank" class="track-title">Golden Hour</a>
+                        <span class="track-artist">JVKE</span>
+                    </div>
+                </div>
+
+                <!-- Track 2: HER -->
+                <div class="spotify-track">
+                    <div class="track-number">2</div>
+                    <img src="https://img.youtube.com/vi/f5-IY_Ja1RM/hqdefault.jpg" alt="HER Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=f5-IY_Ja1RM" target="_blank" class="track-title">HER</a>
+                        <span class="track-artist">Muscadine Bloodline</span>
+                    </div>
+                </div>
+
+                <!-- Track 3: Somewhere Only We Know -->
+                <div class="spotify-track">
+                    <div class="track-number">3</div>
+                    <img src="https://img.youtube.com/vi/hOq-avD8uDo/hqdefault.jpg" alt="Somewhere Only We Know Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=hOq-avD8uDo" target="_blank" class="track-title">Somewhere Only We Know</a>
+                        <span class="track-artist">Keane</span>
+                    </div>
+                </div>
+
+                <!-- Track 4: Sailor Song -->
+                <div class="spotify-track">
+                    <div class="track-number">4</div>
+                    <img src="https://img.youtube.com/vi/Ht33oJM0YzU/hqdefault.jpg" alt="Sailor Song Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=Ht33oJM0YzU" target="_blank" class="track-title">Sailor Song</a>
+                        <span class="track-artist">Gigi Perez</span>
+                    </div>
+                </div>
+
+                <!-- Track 5: Those Eyes -->
+                <div class="spotify-track">
+                    <div class="track-number">5</div>
+                    <img src="https://img.youtube.com/vi/t1dvrcqlQgI/hqdefault.jpg" alt="Those Eyes Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=t1dvrcqlQgI" target="_blank" class="track-title">Those Eyes</a>
+                        <span class="track-artist">New West</span>
+                    </div>
+                </div>
+
+                <!-- Track 6: Who Knows -->
+                <div class="spotify-track">
+                    <div class="track-number">6</div>
+                    <img src="https://img.youtube.com/vi/glscfhJyZHo/hqdefault.jpg" alt="Who Knows Cover" class="track-cover">
+                    <div class="track-details">
+                        <a href="https://www.youtube.com/watch?v=glscfhJyZHo" target="_blank" class="track-title">Who Knows</a>
+                        <span class="track-artist">Nat King Cole</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a class="back" href="#home">⬆ Back to Menu</a>
+        </div>
+    </section>
+
+    <!-- ========================= -->
+    <!-- REASONS SECTION           -->
+    <!-- ========================= -->
+    <section id="reasons">
+        <h2>🌹 Reasons I Love You</h2>
+        <p style="text-align: center; font-style: italic; color: #777; margin-top: -30px; margin-bottom: 50px; font-size: 16px;">
+            A few of the infinitely many things that make me fall for you daily
+        </p>
+        <div class="reasons">
+            <!-- Reason 1 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=300" alt="Your beautiful smile" class="reason-img">
+                <div class="reason-content">
+                    <h3>01</h3>
+                    <h4>Your Perfect & Beautiful Smile</h4>
+                    <p>It is my absolute favorite sight in the world. Your smile is so bright, genuine, and contagiously happy that it instantly wipes away any trace of stress or fatigue from my day.</p>
+                </div>
+            </div>
+
+            <!-- Reason 2 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=300" alt="Your presence and vibe" class="reason-img">
+                <div class="reason-content">
+                    <h3>02</h3>
+                    <h4>Your Presence & Vibe</h4>
+                    <p>You carry a princess-like aura that feels peaceful, bright, and utterly comforting. Being in the same room with you instantly makes me feel grounded and incredibly safe.</p>
+                </div>
+            </div>
+
+            <!-- Reason 3 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1464746133101-a2c3f88e0dd9?q=80&w=300" alt="Sweet and clingy" class="reason-img">
+                <div class="reason-content">
+                    <h3>03</h3>
+                    <h4>Your Super Sweet & Clingy Side</h4>
+                    <p>I absolutely adore how affectionate and snuggly you are. When you lean on me or playfully bump into me as we walk, it makes me feel so loved, wanted, and deeply valued.</p>
+                </div>
+            </div>
+
+            <!-- Reason 4 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?q=80&w=300" alt="Teaching me" class="reason-img">
+                <div class="reason-content">
+                    <h3>04</h3>
+                    <h4>Your Gentle Guidance & Kindness</h4>
+                    <p>You are so patient and kind with me. I love how you look out for me, gently teaching me what's best and showing me what I should and shouldn't do to grow into a better person.</p>
+                </div>
+            </div>
+
+            <!-- Reason 5 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=300" alt="Kissable cheeks and lips" class="reason-img">
+                <div class="reason-content">
+                    <h3>05</h3>
+                    <h4>Your Kissable Cheeks & Lips</h4>
+                    <p>Aside from being breathtakingly beautiful, you have the absolute softest cheeks and prettiest lips that I can't help but adore. It makes me want to shower you with endless sweet kisses.</p>
+                </div>
+            </div>
+
+            <!-- Reason 6 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?q=80&w=300" alt="Expressing love" class="reason-img">
+                <div class="reason-content">
+                    <h3>06</h3>
+                    <h4>How You Express Your Love</h4>
+                    <p>The unique, thoughtful, and tender ways you show me you care mean the universe to me. Every single little gesture from you speaks directly to my heart.</p>
+                </div>
+            </div>
+
+            <!-- Reason 7 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=300" alt="Interest and attention" class="reason-img">
+                <div class="reason-content">
+                    <h3>07</h3>
+                    <h4>Your Unfailing Interest & Attention</h4>
+                    <p>No matter how busy we get, you always keep me close, showing me endless focus, curiosity, and warmth. You make me feel like the most important person in your life.</p>
+                </div>
+            </div>
+
+            <!-- Reason 8 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=300" alt="Career focused" class="reason-img">
+                <div class="reason-content">
+                    <h3>08</h3>
+                    <h4>How Dedicated & Career-Focused You Are</h4>
+                    <p>Your passion and drive to build a beautiful professional future are deeply inspiring. Watching you stay determined, work hard, and pursue your career goals is so attractive.</p>
+                </div>
+            </div>
+
+            <!-- Reason 9 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=300" alt="Very smart" class="reason-img">
+                <div class="reason-content">
+                    <h3>09</h3>
+                    <h4>How Incredibly Smart You Are</h4>
+                    <p>You have a sharp, brilliant mind that constantly leaves me in awe. Your intelligence is easily one of the most beautiful things about you, and I love listening to you talk.</p>
+                </div>
+            </div>
+
+            <!-- Reason 10 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?q=80&w=300" alt="Organized" class="reason-img">
+                <div class="reason-content">
+                    <h3>10</h3>
+                    <h4>How Organized You Are</h4>
+                    <p>The structured and put-together way you handle your daily life is amazing. You bring a wonderful balance and a sense of peaceful, intentional order to my messy, chaotic loop.</p>
+                </div>
+            </div>
+
+            <!-- Reason 11 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=300" alt="Ambitious" class="reason-img">
+                <div class="reason-content">
+                    <h3>11</h3>
+                    <h4>You Have A Plan & You are Ambitious</h4>
+                    <p>You don't just dream; you plan and hold high ambitions for where you want to go. It makes me so excited to stand by you, build with you, and support your beautiful path forward.</p>
+                </div>
+            </div>
+
+            <!-- Reason 12 -->
+            <div class="reason-card">
+                <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=300" alt="My baby" class="reason-img">
+                <div class="reason-content">
+                    <h3>12</h3>
+                    <h4>Lastly, You Being My Baby</h4>
+                    <p>At the end of every long day, having the privilege to call you mine, hold you tight, protect you, and cherish you is the single greatest blessing in my life. I love you, baby.</p>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+            <a class="back" href="#home">⬆ Back to Menu</a>
+        </div>
+    </section>
+
+    <!-- FUTURE SECTION -->
+    <section id="future">
+        <h2>🌎 Our Future Plans</h2>
+        <div class="card">
+            <p style="text-align: center; margin-bottom: 20px; font-style: italic;">Our little bucket list of adventures to check off together:</p>
+            <ul>
+                <li>✨ Travel to a new city together</li>
+                <li>✨ Have a cozy rainy-day movie marathon</li>
+                <li>✨ Cook a fancy dinner from scratch</li>
+                <li>✨ Watch the sunset from a high vantage point</li>
+                <li>✨ Celebrate many, many more monthsaries</li>
+            </ul>
+        </div>
+        <a class="back" href="#home">⬆ Back to Menu</a>
+    </section>
+
+    <!-- ENDING SECTION -->
+    <section id="ending" class="ending">
+        <h1>❤️</h1>
+        <h2>Happy 1 Month, Beautiful!</h2>
+        <p>I love you more with every passing day. Here's to us, our love, and our beautiful forever.</p>
+    </section>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
