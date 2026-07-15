@@ -1,4 +1,4 @@
-const correctPassword = " "; //20260615
+const correctPassword = "20260615";
 const correctBirthday = "20021217";
 
 // Outer Site Password Protection
